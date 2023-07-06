@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:orientation="vertical"
+        android:padding="20dp"
+        android:gravity="center"
+        tools:context=".MainActivity">
+    <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="🤸 Start Beshifying 🤸"
+            android:textStyle="bold"
+            android:textSize="26sp"/>
+    <com.google.android.material.textfield.TextInputLayout
+
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginBottom="20dp"
+            app:boxStrokeColor="#3F51B5"
+            android:hint="Enter Text">
+        <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/textBeshify"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+            android:id="@+id/btnBeshify"
+            android:layout_width="180dp"
+            android:layout_height="60dp"
+            android:text="Beshify"/>
+    <TextView
+            android:id="@+id/beshifiedText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text=""
+            android:textSize="16sp"/>
+</LinearLayout>
